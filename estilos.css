@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+body{
+    margin:0;
+    padding:0;
+    background-image: url(bg.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+@keyframes appear {
+    from {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+h1{
+    text-align: center;
+    font-size: 2em;
+    z-index: -3;
+
+}
+.container-start, .ui2{
+    width: 43.75em;
+    height: 35em;
+    background-color: whitesmoke;
+    border: 2px solid black;
+text-align: center;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
+    
+
+}
+.lets-go{
+padding: 140px;
+    font-size: 2em;
+}
+.button-app {
+    background-color: #EE7C0E;
+    border: none;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 20px 20px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 #000;
+    box-shadow: 2px 2px 0 #000;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+
+  }
+  .easter-egg{
+    display: none;
+  }
+  .confirmar, .easter-egg, .letsgo{
+    background-color: #00ca33;
+    border: none;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 20px 20px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 #000;
+    box-shadow: 2px 2px 0 #000;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+  }
+  .button-app:hover {
+    background-color: #FFB347;
+    color: #000;
+    text-shadow: 1px 1px 0 #FFF;
+    box-shadow: 2px 2px 0 #FFF;
+  }
+h2{
+  text-align: center;
+  font-family:'Press Start 2P', cursive;
+}  
+.ui2{
+  flex-direction: column;
+  justify-content: center;
+}
+  .Charge{
+    font-family:'Press Start 2P', cursive;
+    color:  black;
+    text-align: center;
+    
+}
+.walk{
+  width: 200px;
+  height: 200px;
+}
+.pr{
+  font-family: 'Press Start 2P', cursive;
+}
+.ui{
+    display: none;
+justify-content: center;
+}
+.logo{
+    width: 40%;
+position: absolute;
+transform: translate(2%, -0%);
+max-width: 500px;
+}
+.contents{
+  position: relative;
+  z-index: 5;
+  text-align: center;
+  transform: translate(80px, 0px);
+  font-family: 'Press Start 2P', cursive;
+  font-size: 14px;
+}
+.shake {
+    animation: shake 0.5s;
+  }
+  .click{
+    color: black;
+    font-family:'Press Start 2P', cursive;
+    top: 0%;
+    left: 0%;
+    position: absolute;
+    border:1px solid black;
+    background-color: whitesmoke;
+    padding: 10px 10px;
+    box-shadow: 2px 2px 0 #FFF;
+  }
+ 
+ .turle{
+  left:45%;
+    width: 55%;
+    transform:  translate(40px, -40px);
+    height: 55%;
+      position: relative;
+  display: none;
+ }
+  .hamerboy{
+    position: relative;
+    transform: translate(0px, 20px);
+    right: 40%;
+
+  }
+  @keyframes shake {
+    0% { transform: translate(0, 0); }
+    20% { transform: translate(-10px, 0); }
+    40% { transform: translate(10px, 0); }
+    60% { transform: translate(-10px, 0); }
+    80% { transform: translate(10px, 0); }
+    100% { transform: translate(0, 0); }
+  }
+.loading{
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+width: 190px;
+height: 190px;
+background-color: whitesmoke;
+border: 2px solid black;
+box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
+
+}
+.marioW{
+padding-left: 20px; 
+}
+  .dot {
+    animation-duration: 1s; /* Set the duration of the animation */
+    animation-name: show-hide; /* Set the name of the animation */
+    animation-iteration-count: infinite; /* Set the animation to repeat infinitely */
+ }
+  
+  @keyframes show-hide {
+    0% {
+      opacity: 0; /* Start with an opacity of 0 to make the element invisible */
+    }
+    50% {
+      opacity: 1; /* Set the opacity to 1 to make the element visible */
+    }
+    100% {
+      opacity: 1; /* Set the opacity back to 0 to make the element invisible again */
+    }
+  }
